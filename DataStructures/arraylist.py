@@ -369,3 +369,11 @@ def subList (lst, pos, numelem):
         error.reraise (exp, 'arraylist->subList: ')
 
 
+def CountElement(elemento):
+    try:
+        lst['elements'].count(elemento)
+    except Exception as exp:
+        error.reraise(exp, 'arraylist->CountElement: ')
+
+        
+

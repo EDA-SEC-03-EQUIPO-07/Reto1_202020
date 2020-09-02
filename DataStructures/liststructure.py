@@ -389,4 +389,13 @@ def subList (lst, pos, numelem):
         error.reraise (exp, 'List->subList: ')
 
 
+def CountElement(elemento):
+
+    try:
+        if (lst['type'] == 'ARRAY_LIST'):
+            return alt.CountElement(elemento)
+        else:
+            return slt.CountElement(elemento)
+    except Exception as exp:
+        error.reraise(exp, 'List->CountElement: ')
 
